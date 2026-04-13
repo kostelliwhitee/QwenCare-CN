@@ -1,0 +1,48 @@
+project_name: qwen3-8b-chinese-psychotherapist
+language: zh
+
+paths:
+  raw_data_dir: data/raw
+  processed_data_dir: data/processed
+  sample_dir: data/samples
+  runs_dir: runs
+  logs_dir: logs
+  results_dir: results
+  reports_dir: reports
+
+base_model:
+  preferred_name: Qwen/Qwen3-8B-Instruct
+  local_path: null
+
+training:
+  framework_priority:
+    - llamafactory
+    - transformers_peft_trl
+  stage_order:
+    - baseline
+    - sft
+    - dpo
+  sft:
+    finetuning_type: lora
+    lora_rank: 8
+    lora_alpha: 16
+    target_modules:
+      - q_proj
+      - k_proj
+      - v_proj
+      - o_proj
+  dpo:
+    preference_source: local_rule_or_judge
+
+evaluation:
+  general:
+    - mmlu
+    - mt_bench
+  empathy:
+    - empathy_behavior_proxy
+    - simulated_dialogue_rating
+  response_quality:
+    - distinct_1
+    - distinct_2
+    - avg_length
+    - negative_behavior_frequency

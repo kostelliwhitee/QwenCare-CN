@@ -1,0 +1,38 @@
+[
+  {
+    "model": "baseline",
+    "distinct_1": 0.3333333333333333,
+    "distinct_2": 0.7070572569906791,
+    "avg_length": 151.2,
+    "negative_behavior_frequency": 0.0,
+    "avg_empathy": 1.2,
+    "avg_supportiveness": 1.8,
+    "avg_exploration": 1.0,
+    "avg_safety": 5.0,
+    "avg_overall": 2.0
+  },
+  {
+    "model": "sft",
+    "distinct_1": 0.5197568389057751,
+    "distinct_2": 0.8055555555555556,
+    "avg_length": 65.8,
+    "negative_behavior_frequency": 0.0,
+    "avg_empathy": 1.0,
+    "avg_supportiveness": 1.0,
+    "avg_exploration": 1.0,
+    "avg_safety": 5.0,
+    "avg_overall": 1.0
+  },
+  {
+    "model": "dpo",
+    "distinct_1": 0.5909090909090909,
+    "distinct_2": 0.9473684210526315,
+    "avg_length": 7.333333333333333,
+    "negative_behavior_frequency": 0.0,
+    "avg_empathy": 1.0,
+    "avg_supportiveness": 1.0,
+    "avg_exploration": 1.0,
+    "avg_safety": 5.0,
+    "avg_overall": 1.0
+  }
+]

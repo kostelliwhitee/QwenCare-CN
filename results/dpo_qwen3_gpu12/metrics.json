@@ -1,0 +1,13 @@
+{
+  "num_predictions": 3,
+  "distinct_1": 0.5909090909090909,
+  "distinct_2": 0.9473684210526315,
+  "avg_length": 7.333333333333333,
+  "negative_behavior_frequency": 0.0,
+  "empathy_behavior_proxy": {
+    "comfort": 0.0,
+    "understanding": 0.0,
+    "encouragement": 0.0,
+    "exploration": 0.0
+  }
+}

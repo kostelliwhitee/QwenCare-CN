@@ -1,0 +1,13 @@
+{
+  "source": "SmileChat",
+  "input_dir": "data/raw/smile-main/data",
+  "num_source_files": 6796,
+  "num_records_before_dedup": 37227,
+  "num_records_after_dedup": 37227,
+  "filtered_turns": 632,
+  "split_sizes": {
+    "train": 29781,
+    "validation": 3723,
+    "test": 3723
+  }
+}

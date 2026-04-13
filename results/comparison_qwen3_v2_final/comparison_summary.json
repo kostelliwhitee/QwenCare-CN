@@ -1,0 +1,50 @@
+[
+  {
+    "model": "baseline_q25",
+    "distinct_1": 0.1282755178437734,
+    "distinct_2": 0.4721245605223506,
+    "avg_length": 160.28,
+    "negative_behavior_frequency": 0.0,
+    "junk_rate": 0.16,
+    "think_leak_rate": 0.0,
+    "imperative_rate": 0.0,
+    "too_short_rate": 0.04,
+    "avg_empathy": 1.96,
+    "avg_supportiveness": 2.08,
+    "avg_exploration": 1.08,
+    "avg_safety": 4.56,
+    "avg_overall": 2.76
+  },
+  {
+    "model": "sft_v2_q25",
+    "distinct_1": 0.11600737856118057,
+    "distinct_2": 0.43119077049855786,
+    "avg_length": 195.16,
+    "negative_behavior_frequency": 0.0,
+    "junk_rate": 0.08,
+    "think_leak_rate": 0.0,
+    "imperative_rate": 0.0,
+    "too_short_rate": 0.0,
+    "avg_empathy": 2.12,
+    "avg_supportiveness": 2.2,
+    "avg_exploration": 1.0,
+    "avg_safety": 4.84,
+    "avg_overall": 3.12
+  },
+  {
+    "model": "dpo_v2_q25",
+    "distinct_1": 0.10868245294474803,
+    "distinct_2": 0.43144833197721727,
+    "avg_length": 197.64,
+    "negative_behavior_frequency": 0.0,
+    "junk_rate": 0.04,
+    "think_leak_rate": 0.0,
+    "imperative_rate": 0.0,
+    "too_short_rate": 0.0,
+    "avg_empathy": 2.08,
+    "avg_supportiveness": 2.48,
+    "avg_exploration": 1.0,
+    "avg_safety": 4.92,
+    "avg_overall": 3.44
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "num_predictions": 25,
+  "distinct_1": 0.11600737856118057,
+  "distinct_2": 0.43119077049855786,
+  "avg_length": 195.16,
+  "negative_behavior_frequency": 0.0,
+  "junk_rate": 0.08,
+  "think_leak_rate": 0.0,
+  "imperative_rate": 0.0,
+  "too_short_rate": 0.0,
+  "empathy_behavior_proxy": {
+    "comfort": 0.16,
+    "understanding": 0.12,
+    "encouragement": 0.36,
+    "exploration": 0.0
+  }
+}

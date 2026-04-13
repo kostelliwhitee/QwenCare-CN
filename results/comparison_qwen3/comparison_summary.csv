@@ -1,0 +1,4 @@
+model,distinct_1,distinct_2,avg_length,negative_behavior_frequency,avg_empathy,avg_supportiveness,avg_exploration,avg_safety,avg_overall
+baseline,0.3333333333333333,0.7070572569906791,151.2,0.0,1.2,1.8,1.0,5.0,2.0
+sft,0.5197568389057751,0.8055555555555556,65.8,0.0,1.0,1.0,1.0,5.0,1.0
+dpo,0.5909090909090909,0.9473684210526315,7.333333333333333,0.0,1.0,1.0,1.0,5.0,1.0

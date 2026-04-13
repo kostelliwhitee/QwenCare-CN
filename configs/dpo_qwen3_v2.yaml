@@ -1,0 +1,18 @@
+stage: dpo_v2
+base_model_name_or_path: models/Qwen3-8B
+sft_adapter_path: runs/sft_qwen3_v2
+preference_data_path: data/processed/v2/dpo_pairs_v2.json
+output_dir: runs/dpo_qwen3_v2
+cuda_visible_devices: "5,6"
+
+training:
+  per_device_train_batch_size: 1
+  gradient_accumulation_steps: 8
+  num_train_epochs: 1
+  learning_rate: 2.0e-6
+  beta: 0.02
+  bf16: true
+  logging_steps: 1
+  save_steps: 50
+  prompt_mode: no_think
+  loss_mode: response_only

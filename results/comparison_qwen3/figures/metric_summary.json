@@ -1,0 +1,41 @@
+{
+  "baseline": {
+    "num_predictions": 5,
+    "distinct_1": 0.3333333333333333,
+    "distinct_2": 0.7070572569906791,
+    "avg_length": 151.2,
+    "negative_behavior_frequency": 0.0,
+    "empathy_behavior_proxy": {
+      "comfort": 0.2,
+      "understanding": 0.0,
+      "encouragement": 0.6,
+      "exploration": 0.0
+    }
+  },
+  "sft": {
+    "num_predictions": 5,
+    "distinct_1": 0.5197568389057751,
+    "distinct_2": 0.8055555555555556,
+    "avg_length": 65.8,
+    "negative_behavior_frequency": 0.0,
+    "empathy_behavior_proxy": {
+      "comfort": 0.0,
+      "understanding": 0.0,
+      "encouragement": 0.0,
+      "exploration": 0.0
+    }
+  },
+  "dpo": {
+    "num_predictions": 3,
+    "distinct_1": 0.5909090909090909,
+    "distinct_2": 0.9473684210526315,
+    "avg_length": 7.333333333333333,
+    "negative_behavior_frequency": 0.0,
+    "empathy_behavior_proxy": {
+      "comfort": 0.0,
+      "understanding": 0.0,
+      "encouragement": 0.0,
+      "exploration": 0.0
+    }
+  }
+}

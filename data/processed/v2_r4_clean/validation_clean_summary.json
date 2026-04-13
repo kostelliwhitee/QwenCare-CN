@@ -1,0 +1,9 @@
+{
+  "input_file": "data/processed/v2_r4/validation.json",
+  "output_file": "data/processed/v2_r4_clean/validation.json",
+  "num_input_records": 1500,
+  "num_output_records": 1500,
+  "num_dropped_records": 0,
+  "tool_marker_records": 2,
+  "role_prefix_records": 10
+}

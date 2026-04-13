@@ -1,0 +1,13 @@
+preferred_sources:
+  - qiuhuachuan/smile
+
+fallback_sources:
+  - thu-coai/esconv
+  - Wangrui6/Zhihu-KOL
+
+notes:
+  - 优先选择中文心理支持/情绪支持对话数据
+  - 已确认 Hugging Face 上的 `thu-coai/esconv` 下载版本为英文情绪支持对话，不作为主训练语料
+  - 当前优先使用 GitHub 公开的 SmileChat 数据
+  - 若 SmileChat 或 AuraDial 不可获得，则再考虑 ESConv 等替代并在报告中说明替换依据
+  - 所有数据需统一转为 Alpaca 风格 JSON

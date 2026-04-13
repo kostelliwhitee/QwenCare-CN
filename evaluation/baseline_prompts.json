@@ -1,0 +1,22 @@
+[
+  {
+    "id": "sleep_anxiety",
+    "prompt": "最近总是很焦虑，晚上翻来覆去睡不着，第二天又特别疲惫。"
+  },
+  {
+    "id": "breakup_self_doubt",
+    "prompt": "分手之后我一直在想，是不是因为我不够好，所以才会被放弃。"
+  },
+  {
+    "id": "work_burnout",
+    "prompt": "工作压力越来越大，我每天都觉得自己快撑不住了。"
+  },
+  {
+    "id": "family_tension",
+    "prompt": "我跟家里人一说自己的想法就会吵起来，慢慢地我都不想交流了。"
+  },
+  {
+    "id": "loneliness_city",
+    "prompt": "来到新城市以后没有朋友，下班回家就觉得特别孤单。"
+  }
+]

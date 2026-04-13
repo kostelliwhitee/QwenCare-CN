@@ -1,0 +1,14 @@
+{
+  "num_input_records": 32321,
+  "num_train_records": 20005,
+  "num_validation_records": 1500,
+  "num_rewritten_records": 8000,
+  "num_gold_records": 13505,
+  "num_rewrite_records": 8000,
+  "gold_threshold": 1.0,
+  "rewrite_threshold": -0.25,
+  "rewrite_margin": 0.75,
+  "fallback_keep_threshold": 1.0,
+  "dropped_for_low_quality": 10816,
+  "rewrite_model_path": "models/Qwen3-8B"
+}

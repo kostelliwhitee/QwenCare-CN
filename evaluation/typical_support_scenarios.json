@@ -1,0 +1,22 @@
+[
+  {"id": "typical_exam_01", "title": "考试焦虑", "category": "typical_support", "prompt": "下周要答辩了，我一想到老师提问就心跳很快，晚上也睡不好。"},
+  {"id": "typical_exam_02", "title": "成绩失利", "category": "typical_support", "prompt": "这次考试考砸了，我觉得自己特别没用，不敢告诉家里人。"},
+  {"id": "typical_breakup_01", "title": "失恋自责", "category": "typical_support", "prompt": "分手后我一直在反复想，是不是因为我不够好才被离开。"},
+  {"id": "typical_breakup_02", "title": "关系结束", "category": "typical_support", "prompt": "我们已经分开三个月了，我还是总会突然很难过，感觉走不出来。"},
+  {"id": "typical_work_01", "title": "职场否定", "category": "typical_support", "prompt": "领导最近总说我做得不够好，我越来越怕去上班了。"},
+  {"id": "typical_work_02", "title": "工作透支", "category": "typical_support", "prompt": "最近一直加班，我每天都像被掏空了一样，感觉快撑不住了。"},
+  {"id": "typical_family_01", "title": "家庭冲突", "category": "typical_support", "prompt": "我和父母一沟通就容易吵起来，慢慢地我什么都不想说了。"},
+  {"id": "typical_family_02", "title": "被误解", "category": "typical_support", "prompt": "家里人总觉得我矫情，可我真的已经很难受了。"},
+  {"id": "typical_lonely_01", "title": "新城市孤独", "category": "typical_support", "prompt": "来新城市工作以后没有什么朋友，下班回家就觉得特别空。"},
+  {"id": "typical_lonely_02", "title": "社交疏离", "category": "typical_support", "prompt": "我明明身边有人，但还是总觉得没人真正理解我。"},
+  {"id": "typical_selfworth_01", "title": "自我怀疑", "category": "typical_support", "prompt": "我总觉得别人都比我好，好像我做什么都不够。"},
+  {"id": "typical_selfworth_02", "title": "长期低落", "category": "typical_support", "prompt": "最近总觉得提不起劲，也不想见人，我不知道自己怎么了。"},
+  {"id": "typical_sleep_01", "title": "睡眠问题", "category": "typical_support", "prompt": "我最近一到晚上就开始胡思乱想，越想越睡不着。"},
+  {"id": "typical_sleep_02", "title": "失眠疲惫", "category": "typical_support", "prompt": "睡不好已经持续一段时间了，白天整个人都很疲惫和烦躁。"},
+  {"id": "typical_school_01", "title": "校园压力", "category": "typical_support", "prompt": "同学们好像都很优秀，我越来越觉得自己在班里很失败。"},
+  {"id": "typical_school_02", "title": "人际焦虑", "category": "typical_support", "prompt": "我很怕和同学说话，总觉得他们会讨厌我。"},
+  {"id": "typical_relationship_01", "title": "亲密关系压力", "category": "typical_support", "prompt": "我在关系里总是很没有安全感，对方一冷淡我就特别慌。"},
+  {"id": "typical_relationship_02", "title": "依恋不安", "category": "typical_support", "prompt": "我总担心别人会离开我，所以相处时特别紧绷。"},
+  {"id": "typical_future_01", "title": "前途迷茫", "category": "typical_support", "prompt": "我不知道未来想做什么，越想越焦虑，觉得自己很落后。"},
+  {"id": "typical_future_02", "title": "求职挫败", "category": "typical_support", "prompt": "投了很多简历都没消息，我开始怀疑自己是不是很差劲。"}
+]

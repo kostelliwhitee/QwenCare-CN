@@ -1,0 +1,39 @@
+.DS_Store
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+.venv/
+.vendor/
+.hf_cache/
+.cache/
+*.log
+*.tmp
+*.swp
+dist/
+*.tar.gz
+*.zip
+
+# data/raw/
+# data/processed/
+# data/samples/
+models/
+# logs/
+# results/
+# runs/
+# reports/assets/
+demo/cache/
+
+# Large training artifacts that exceed GitHub's per-file limit
+runs/**/*.safetensors
+runs/**/*.pt
+runs/**/*.bin
+
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/samples/.gitkeep
+!logs/.gitkeep
+!results/.gitkeep
+!runs/.gitkeep

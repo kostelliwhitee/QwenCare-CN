@@ -25,7 +25,7 @@
 | sft_v2_q25 | 0.1160 | 0.4312 | 195.16 | 0.08 | 2.20 | 4.84 | 3.12 |
 | dpo_v2_q25 | 0.1087 | 0.4314 | 197.64 | 0.04 | 2.48 | 4.92 | 3.44 |
 
-完整对比表见 [results/comparison_qwen3_v2_final/comparison_summary.md](/9950backfile/heruxuan/emocalcu/results/comparison_qwen3_v2_final/comparison_summary.md)。
+完整对比表见 [results/comparison_qwen3_v2_final/comparison_summary.md](results/comparison_qwen3_v2_final/comparison_summary.md)。
 
 ### 历史对比：第一轮正式实验
 
@@ -35,7 +35,7 @@
 | sft_v1 | 0.5198 | 0.8056 | 65.8 | 1.0 |
 | dpo_v1 | 0.5909 | 0.9474 | 7.3333 | 1.0 |
 
-历史对比表见 [results/comparison_qwen3/comparison_summary.md](/9950backfile/heruxuan/emocalcu/results/comparison_qwen3/comparison_summary.md)。
+历史对比表见 [results/comparison_qwen3/comparison_summary.md](results/comparison_qwen3/comparison_summary.md)。
 
 ## 项目结构
 
@@ -61,7 +61,7 @@
 └── EXPERIMENT_LOG.md
 ```
 
-最终交付说明见 [docs/final_delivery.md](/9950backfile/heruxuan/emocalcu/docs/final_delivery.md)。
+最终交付说明见 [docs/final_delivery.md](docs/final_delivery.md)。
 
 ## 环境准备
 
@@ -72,7 +72,7 @@ scripts/run_in_conda.sh python -V
 source scripts/env.sh
 ```
 
-环境声明见 [environment.yml](/9950backfile/heruxuan/emocalcu/environment.yml)。
+环境声明见 [environment.yml](environment.yml)。
 
 当前实验中实际使用过的 GPU 规划：
 
@@ -106,8 +106,8 @@ bash scripts/build_v2_r4_clean.sh
 
 当前用于正式 `SFT v2` 的训练数据是：
 
-- [train.json](/9950backfile/heruxuan/emocalcu/data/processed/v2_r4_clean/train.json)
-- [validation.json](/9950backfile/heruxuan/emocalcu/data/processed/v2_r4_clean/validation.json)
+- [train.json](data/processed/v2_r4_clean/train.json)
+- [validation.json](data/processed/v2_r4_clean/validation.json)
 
 ## 训练步骤
 
@@ -147,7 +147,7 @@ CUDA_VISIBLE_DEVICES=4 bash scripts/run_sft_v2_r4_clean_gpu4.sh
 
 输出目录：
 
-- [runs/sft_qwen3_v2_r4_clean_gpu4](/9950backfile/heruxuan/emocalcu/runs/sft_qwen3_v2_r4_clean_gpu4)
+- [runs/sft_qwen3_v2_r4_clean_gpu4](runs/sft_qwen3_v2_r4_clean_gpu4)
 
 ### 4. 第二轮 DPO v2 数据构建
 
@@ -160,7 +160,7 @@ CUDA_VISIBLE_DEVICES=6 bash scripts/build_dpo_v2_r4clean_gpu6.sh \
 
 关键产物：
 
-- [dpo_pairs_v2.json](/9950backfile/heruxuan/emocalcu/data/processed/v2_r4_clean_dpo/dpo_pairs_v2.json)
+- [dpo_pairs_v2.json](data/processed/v2_r4_clean_dpo/dpo_pairs_v2.json)
 
 ### 5. 第二轮正式 DPO v2
 
@@ -173,7 +173,7 @@ CUDA_VISIBLE_DEVICES=3,4 bash scripts/run_dpo_v2_gpu56.sh \
 
 输出目录：
 
-- [runs/dpo_qwen3_v2_r4_clean_gpu34](/9950backfile/heruxuan/emocalcu/runs/dpo_qwen3_v2_r4_clean_gpu34)
+- [runs/dpo_qwen3_v2_r4_clean_gpu34](runs/dpo_qwen3_v2_r4_clean_gpu34)
 
 ## 自动评测
 
@@ -200,9 +200,9 @@ python3 evaluation/build_comparison_summary.py \
 
 相关目录：
 
-- [results/quick_eval_baseline_q25](/9950backfile/heruxuan/emocalcu/results/quick_eval_baseline_q25)
-- [results/quick_eval_sft_v2_q25](/9950backfile/heruxuan/emocalcu/results/quick_eval_sft_v2_q25)
-- [results/quick_eval_dpo_v2_q25](/9950backfile/heruxuan/emocalcu/results/quick_eval_dpo_v2_q25)
+- [results/quick_eval_baseline_q25](results/quick_eval_baseline_q25)
+- [results/quick_eval_sft_v2_q25](results/quick_eval_sft_v2_q25)
+- [results/quick_eval_dpo_v2_q25](results/quick_eval_dpo_v2_q25)
 
 ## Demo 启动
 
@@ -212,8 +212,8 @@ CLI 终端交互：
 
 ```bash
 CUDA_VISIBLE_DEVICES=1 \
-DEMO_MODEL_PATH=/9950backfile/heruxuan/emocalcu/models/Qwen3-8B \
-DEMO_ADAPTER_PATH=/9950backfile/heruxuan/emocalcu/runs/dpo_qwen3_v2_r4_clean_gpu34 \
+DEMO_MODEL_PATH=models/Qwen3-8B \
+DEMO_ADAPTER_PATH=runs/dpo_qwen3_v2_r4_clean_gpu34 \
 bash scripts/run_demo_cli_hf.sh
 ```
 
@@ -221,8 +221,8 @@ bash scripts/run_demo_cli_hf.sh
 
 ```bash
 CUDA_VISIBLE_DEVICES=1,2 \
-DEMO_MODEL_PATH=/9950backfile/heruxuan/emocalcu/models/Qwen3-8B \
-DEMO_ADAPTER_PATH=/9950backfile/heruxuan/emocalcu/runs/dpo_qwen3_v2_r4_clean_gpu34 \
+DEMO_MODEL_PATH=models/Qwen3-8B \
+DEMO_ADAPTER_PATH=runs/dpo_qwen3_v2_r4_clean_gpu34 \
 bash scripts/run_demo_hf_gpu12.sh
 ```
 
@@ -269,11 +269,11 @@ CUDA_VISIBLE_DEVICES=1,2 bash scripts/run_demo_web_gpu12.sh
 
 ## 报告与状态文档
 
-- 最终报告：[reports/final_report.md](/9950backfile/heruxuan/emocalcu/reports/final_report.md)
-- 最终交付说明：[docs/final_delivery.md](/9950backfile/heruxuan/emocalcu/docs/final_delivery.md)
-- 发布打包指南：[docs/publish_guide.md](/9950backfile/heruxuan/emocalcu/docs/publish_guide.md)
-- 项目状态：[PROJECT_STATUS.md](/9950backfile/heruxuan/emocalcu/PROJECT_STATUS.md)
-- 实验记录：[EXPERIMENT_LOG.md](/9950backfile/heruxuan/emocalcu/EXPERIMENT_LOG.md)
+- 最终报告：[reports/final_report.md](reports/final_report.md)
+- 最终交付说明：[docs/final_delivery.md](docs/final_delivery.md)
+- 发布打包指南：[docs/publish_guide.md](docs/publish_guide.md)
+- 项目状态：[PROJECT_STATUS.md](PROJECT_STATUS.md)
+- 实验记录：[EXPERIMENT_LOG.md](EXPERIMENT_LOG.md)
 
 ## 打包与上传准备
 
@@ -309,6 +309,6 @@ bash scripts/package_offline_bundle.sh
 - 所有长任务建议在 `tmux` 中执行。
 - 所有实验产物统一落在 `results/`、`runs/`、`logs/`。
 - 若要快速了解最终状态，建议依次查看：
-  - [docs/final_delivery.md](/9950backfile/heruxuan/emocalcu/docs/final_delivery.md)
-  - [reports/final_report.md](/9950backfile/heruxuan/emocalcu/reports/final_report.md)
-  - [results/comparison_qwen3_v2_final/comparison_summary.md](/9950backfile/heruxuan/emocalcu/results/comparison_qwen3_v2_final/comparison_summary.md)
+  - [docs/final_delivery.md](docs/final_delivery.md)
+  - [reports/final_report.md](reports/final_report.md)
+  - [results/comparison_qwen3_v2_final/comparison_summary.md](results/comparison_qwen3_v2_final/comparison_summary.md)
